@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       >
         <main className="grid min-h-screen grid-cols-2">
           <AsideContent />
-          <section className="flex flex-col bg-[url(../src/assets/bg-stars.svg)] bg-cover p-16">
+          <section className="flex max-h-screen flex-col overflow-y-scroll bg-[url(../src/assets/bg-stars.svg)] bg-cover">
             {children}
           </section>
         </main>
